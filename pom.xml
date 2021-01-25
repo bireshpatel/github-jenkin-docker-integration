@@ -7,9 +7,22 @@
     <groupId>com.devops.learning</groupId>
     <artifactId>github-jenkin-docker-integration</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Learning DevOps</name>
 
     <build>
-        <finalName>github-jenkin-docker-integration</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.devops.learning.MainTest</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-
 </project>

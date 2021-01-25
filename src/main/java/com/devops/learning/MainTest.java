@@ -1,3 +1,5 @@
+package com.devops.learning;
+
 public class MainTest {
 
     public static void main(String[] args) {
